@@ -13,7 +13,7 @@ scrape_configs:
         filters:
         - name: tag:aws:autoscaling:groupName
           values:
-          - EC2ContainerService-test-EcsInstanceAsg-ZRXU5XLM7Q83
+          - EC2ContainerService-poc-EcsInstanceAsg-1OFBV7P3EZ9TQ
   - job_name: ecs_CAdvisor
     ec2_sd_configs:
       - port: 9200 # referred to cAdvisor exposed port
@@ -21,4 +21,4 @@ scrape_configs:
         filters:
         - name: tag:aws:autoscaling:groupName
           values:
-          - EC2ContainerService-test-EcsInstanceAsg-ZRXU5XLM7Q83
+          - EC2ContainerService-poc-EcsInstanceAsg-1OFBV7P3EZ9TQ
